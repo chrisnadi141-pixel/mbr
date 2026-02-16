@@ -5,6 +5,7 @@ body {
   background: url("masjid2.jpg") no-repeat center center fixed;
   background-size: cover;
   color: white;
+  z-index: 1;
 }
 
 /* ================= JADWAL SHOLAT ================= */
@@ -91,3 +92,4 @@ body {
   text-align: center;
   padding: 10px;
 }
+
