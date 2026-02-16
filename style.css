@@ -6,6 +6,7 @@ body {
   background-size: cover;
   color: white;
   z-index: 1;
+  inset: 0;
 }
 
 /* ================= JADWAL SHOLAT ================= */
@@ -92,4 +93,5 @@ body {
   text-align: center;
   padding: 10px;
 }
+
 
