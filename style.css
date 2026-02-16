@@ -1,13 +1,19 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
-  background: url("masjid2.jpg") no-repeat center center fixed;
-  background-size: cover;
   color: white;
-  #bg {
+}
+/* FOTO FULL LAYAR */
+#bg {
   position: fixed;
   inset: 0;
+  background: url("masjid2.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: 1;
 }
 
 /* ================= JADWAL SHOLAT ================= */
@@ -94,6 +100,7 @@ body {
   text-align: center;
   padding: 10px;
 }
+
 
 
 
