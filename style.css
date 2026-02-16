@@ -5,7 +5,7 @@ body {
   background: url("masjid2.jpg") no-repeat center center fixed;
   background-size: cover;
   color: white;
-  bg {
+  #bg {
   position: fixed;
   inset: 0;
 }
@@ -94,6 +94,7 @@ body {
   text-align: center;
   padding: 10px;
 }
+
 
 
 
