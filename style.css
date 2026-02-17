@@ -1,18 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
-}
-#bg {
-  position: fixed;
-  inset: 0;
-  background: url("masjid2.jpg") no-repeat center center;
+  background: url("masjid2.jpg") no-repeat center center fixed;
   background-size: cover;
-  z-index: -1;
+  color: white;
 }
 
 /* ================= JADWAL SHOLAT ================= */
@@ -99,6 +91,7 @@ body {
   text-align: center;
   padding: 10px;
 }
+
 
 
 
