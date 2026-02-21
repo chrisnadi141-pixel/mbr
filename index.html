@@ -6,6 +6,23 @@
 <title>Display Jadwal Sholat - Masjid baiturrahman</title>
 
 <style>
+#headerBox{
+  width:100%;
+  max-width:100%;
+  margin:0 auto 20px;
+  padding:0 20px;          
+  text-align:center;
+  box-sizing:border-box;
+}
+
+/* LOGO */
+#headerBox img{
+  width:140px;
+  max-width:80%;
+  margin:0 auto 10px;
+  display:block;
+  filter:drop-shadow(0 0 10px rgba(0,0,0,0.8));
+}
 
 
 /* HEADER */
@@ -31,18 +48,30 @@
 }
 
 #jamDigital{
-  font-size:4.2rem;
+  font-size:clamp(5rem, 5vw, 4rem);
   font-weight:900;
+  margin-top:10px;
+  text-align:center;
+  width:100%;
   color:#00ffff;
-  text-shadow:0 0 15px rgba(0,255,255,.9);
+  text-shadow:
+    0 0 12px rgba(0,255,255,0.8),
+    0 0 20px rgba(0,255,255,0.4);
 }
 
 .header-center{text-align:center}
 
 #masjidName{
-  font-size:2.6rem;
+  font-size:clamp(2rem, 4vw, 3rem);
   font-weight:900;
-}
+  letter-spacing:1px;
+  margin:0 auto;
+  text-align:center;
+  line-height:1.2;
+  word-wrap:break-word;
+  text-shadow:
+    0 0 12px rgba(0,0,0,0.8),
+    0 0 20px rgba(0,255,255,0.4);
 
 /* ALAMAT BERJALAN */
 #alamatWrapper{
@@ -384,6 +413,7 @@ setInterval(cekAdzan,1000);
 </body>
 
 </html>
+
 
 
 
