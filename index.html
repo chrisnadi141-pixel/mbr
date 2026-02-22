@@ -140,7 +140,19 @@ th,td{
 </head>
 
 <body>
-
+  <button onclick="openFullscreen();">Klik untuk Full Screen</button>
+  <script>
+  var elem = document.documentElement;
+  function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+  }
+</script>
 <!-- HEADER -->
 <div id="headerTop">
   <div><div id="jamDigital"></div></div>
@@ -374,5 +386,6 @@ setInterval(cekAdzan,1000);
 </body>
 
 </html>
+
 
 
