@@ -140,19 +140,7 @@ th,td{
 </head>
 
 <body>
-  <button onclick="openFullscreen();">Klik untuk Full Screen</button>
-  <script>
-  var elem = document.documentElement;
-  function openFullscreen() {
-    if (elem.requestFullscreen) {
-      elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-      elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { /* IE/Edge */
-      elem.msRequestFullscreen();
-    }
-  }
-</script>
+
 <!-- HEADER -->
 <div id="headerTop">
   <div><div id="jamDigital"></div></div>
@@ -174,7 +162,19 @@ th,td{
   <span id="hariBesarText">Memuat hari besar Islam...</span>
  </div>
 </div>
-
+  <button onclick="openFullscreen();">Klik untuk Full Screen</button>
+  <script>
+  var elem = document.documentElement;
+  function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+  }
+</script>
 <!-- ================= JADWAL SHOLAT (BAWAH) ================= -->
 <div class="footer-text">
  <div class="jadwal" id="jadwalTable">
@@ -386,6 +386,7 @@ setInterval(cekAdzan,1000);
 </body>
 
 </html>
+
 
 
 
